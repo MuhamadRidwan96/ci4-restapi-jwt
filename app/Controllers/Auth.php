@@ -1,9 +1,8 @@
 <?php namespace App\Controllers;
 
-use App\Model\ModelAuth as ModelModelAuth;
 use App\Models\ModelAuth;
 use CodeIgniter\API\ResponseTrait;
-use Config\Services;
+ 
 
 
 class Auth extends BaseController{
@@ -50,8 +49,8 @@ class Auth extends BaseController{
                     $password = $this->request->getVar('password');
 
                     $data = $mods->getEmail($email);
-                    if($data['password'] !=md5($password)){
-                        return $this->fail('password tidak sesuai');
+                    if($data['password'] != md5($password)){
+                        return $this->fail("password tidak sesuai");
                     } else {
                          
                         helper('jwt');

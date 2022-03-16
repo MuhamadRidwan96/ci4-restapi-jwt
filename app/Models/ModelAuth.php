@@ -16,7 +16,7 @@ class ModelAuth extends Model{
         $data = $builder->where('email', $email)->first();
 
         if(!$data){
-            throw new Exception("user tidak ditemukan");
+            throw new Exception('user tidak ditemukan');
         } return $data;
     }
 

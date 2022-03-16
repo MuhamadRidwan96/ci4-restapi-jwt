@@ -23,7 +23,7 @@ class JwtFilter implements FilterInterface
 
         } catch(Exception $e){
             return Services::response()->setJSON([
-                'errors' => $e->getMessage()
+                'error' => $e->getMessage()
             ])->setStatusCode(ResponseInterface::HTTP_UNAUTHORIZED);
         }
     }

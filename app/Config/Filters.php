@@ -68,6 +68,11 @@ class Filters extends BaseConfig
      * @var array
      */
     public $filters = [
-       
+       'authentication' => [
+           'before' => [
+               'stcok/*',
+               'stock'
+           ]
+       ]
     ];
 }

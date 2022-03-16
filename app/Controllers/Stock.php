@@ -23,7 +23,7 @@ class Stock extends BaseController{
         $data = $this->request->getPost();
 
         if(!$this->model->save($data)){
-            return $this->fail($this->model->errors);
+            return $this->fail($this->model->errors());
         } else {
             $response = [
                 'status' => 201,
@@ -56,7 +56,7 @@ class Stock extends BaseController{
             return $this->failNotFound("data tidak ditemukan");
         }
         if(!$this->model->save($data)){
-            return $this->fail($this->model->errors);
+            return $this->fail($this->model->errors());
         }
         $response = [
             'status' => 200,

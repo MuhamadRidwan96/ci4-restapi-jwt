@@ -16,7 +16,7 @@ function getJWT($authHeader){
 
 function validateJWT($encodeToken){
     $key = getenv('JWT_SECRET_KEY');
-    $decodedToken = JWT::decode($encodeToken,new Key($key,'HS256'));
+    $decodedToken = JWT::decode($encodeToken,new Key($key,'HS384'));
     $mods = new ModelAuth();
     $mods->getEmail($decodedToken->email);
     
@@ -36,6 +36,6 @@ function createJWT($email){
 
     ];
 
-    $jwt = JWT::encode($payload,$key,'HS256');
+    $jwt = JWT::encode($payload,$key,'HS384');
     return $jwt;
 }
