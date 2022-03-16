@@ -8,7 +8,9 @@ class ModelStock extends Model{
 
     protected $table = "stock";
     protected $primarykey = "id";
-    protected $allowedFields =[
+    protected $allowedFields = ['mm','bin','items','available_stock','uom','gr_date'];
+
+    protected $validationRules = [
         'mm' => 'required',
         'bin'=> 'required',
         'items' => 'required',
@@ -16,7 +18,7 @@ class ModelStock extends Model{
         'uom' => 'required',
         'gr_date' => 'required'
     ];
-    protected $validationRules=[
+    protected $validationMessage=[
         'mm' => [
             'required' => 'silahkan masukan mm'],
         'bin' => [
