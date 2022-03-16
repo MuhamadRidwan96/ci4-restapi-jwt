@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Model;
+namespace App\Models;
 
 use CodeIgniter\Model;
 
 class ModelStock extends Model{
 
-    protected $table = "stock";
+    protected $table = "stocks";
     protected $primarykey = "id";
     protected $allowedFields = ['mm','bin','items','available_stock','uom','gr_date'];
 

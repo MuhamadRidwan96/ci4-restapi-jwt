@@ -1,6 +1,7 @@
 <?php namespace App\Controllers;
 
-use App\Model\ModelAuth;
+use App\Model\ModelAuth as ModelModelAuth;
+use App\Models\ModelAuth;
 use CodeIgniter\API\ResponseTrait;
 use Config\Services;
 
@@ -18,6 +19,12 @@ class Auth extends BaseController{
         $validation = \Config\Services::validation();
 
         $aturan = [
+            'username' => [
+                'rules' => 'required',
+                'error' => [
+                    'required' => 'silahkan masukan username anda'
+                ]
+                ],
             'email' => [
                 'rules' => 'required|valid_email',
                 'error' =>[
@@ -34,7 +41,7 @@ class Auth extends BaseController{
                     ];
     
                     $validation->setRules($aturan);
-                    if(!$validation->withRequest($this->request)->run){
+                    if(!$validation->withRequest($this->request)->run()){
                         return $this->fail($validation->getErrors());
                     }
 

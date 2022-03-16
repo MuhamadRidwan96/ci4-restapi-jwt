@@ -16,14 +16,14 @@ class JwtFilter implements FilterInterface
     {
         $header = $request->getServer('HTTP_AUTHORIZATION');
         try{
-
             helper('jwt');
             $encodeToken = getJWT($header);
             validateJWT($encodeToken);
             return $request;
+
         } catch(Exception $e){
             return Services::response()->setJSON([
-                'error' => $e->getMessage()
+                'errors' => $e->getMessage()
             ])->setStatusCode(ResponseInterface::HTTP_UNAUTHORIZED);
         }
     }

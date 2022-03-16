@@ -1,7 +1,7 @@
 <?php namespace App\Controllers;
 
 use CodeIgniter\API\ResponseTrait;
-use App\Model\ModelStock;
+use App\Models\ModelStock;
 
 class Stock extends BaseController{
     
@@ -18,13 +18,10 @@ class Stock extends BaseController{
     }
 
     public function create(){
-        //use this methode
-        //$data = [
-        //    'value' => $this->request->getVar('value'),
-        //    'value2' => $this->request->getVar('value2')
-        // ];
-        // or use the methode below
+       
+
         $data = $this->request->getPost();
+
         if(!$this->model->save($data)){
             return $this->fail($this->model->errors);
         } else {

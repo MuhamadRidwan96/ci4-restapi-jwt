@@ -1,7 +1,7 @@
 <?php
 
 
-use App\Model\ModelAuth;
+use App\Models\ModelAuth;
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 

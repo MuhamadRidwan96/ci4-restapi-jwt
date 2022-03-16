@@ -4,3 +4,48 @@ CRITICAL - 2022-03-16 10:00:46 --> Class 'CodeIgniter\Filter\JwtFilter' not foun
 #2 /home/rdn/Desktop/ci4-restapi-jwt/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #3 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/rdn/Deskt...')
 #4 {main}
+CRITICAL - 2022-03-16 10:03:20 --> Class 'CodeIgniter\Filter\JwtFilter' not found
+#0 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run()
+#1 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#2 /home/rdn/Desktop/ci4-restapi-jwt/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/rdn/Deskt...')
+#4 {main}
+CRITICAL - 2022-03-16 10:03:24 --> Class 'CodeIgniter\Filter\JwtFilter' not found
+#0 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run()
+#1 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#2 /home/rdn/Desktop/ci4-restapi-jwt/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/rdn/Deskt...')
+#4 {main}
+CRITICAL - 2022-03-16 10:05:12 --> Class 'Config\JwtFilter' not found
+#0 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run()
+#1 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#2 /home/rdn/Desktop/ci4-restapi-jwt/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/rdn/Deskt...')
+#4 {main}
+CRITICAL - 2022-03-16 10:06:42 --> Class 'CodeIgniter\Filters\JwtFilter' not found
+#0 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run()
+#1 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#2 /home/rdn/Desktop/ci4-restapi-jwt/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/rdn/Deskt...')
+#4 {main}
+CRITICAL - 2022-03-16 10:07:01 --> Class 'Config\JwtFilter' not found
+#0 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run()
+#1 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#2 /home/rdn/Desktop/ci4-restapi-jwt/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/rdn/Deskt...')
+#4 {main}
+CRITICAL - 2022-03-16 10:11:42 --> Class 'App\Model\ModelAuth' not found
+#0 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/CodeIgniter.php(809): App\Controllers\Auth->__construct()
+#1 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/rdn/Desktop/ci4-restapi-jwt/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/rdn/Deskt...')
+#5 {main}
+CRITICAL - 2022-03-16 10:16:15 --> Undefined property: CodeIgniter\Validation\Validation::$run
+#0 /home/rdn/Desktop/ci4-restapi-jwt/app/Controllers/Auth.php(38): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Auth->index()
+#2 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/rdn/Desktop/ci4-restapi-jwt/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/rdn/Deskt...')
+#6 {main}
