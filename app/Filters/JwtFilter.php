@@ -7,9 +7,11 @@ use CodeIgniter\HTTP\ResponseInterface;
 use CodeIgniter\Filters\FilterInterface;
 use Config\Services;
 use Exception;
+use CodeIgniter\API\ResponseTrait;
 
 class MyFilter implements FilterInterface
 {
+    use ResponseTrait;
     public function before(RequestInterface $request, $arguments = null)
     {
         $header = $request->getServer('HTTP_AUTHORIZATION');
