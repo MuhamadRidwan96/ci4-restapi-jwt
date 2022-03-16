@@ -9,7 +9,7 @@ use Config\Services;
 use Exception;
 use CodeIgniter\API\ResponseTrait;
 
-class MyFilter implements FilterInterface
+class JwtFilter implements FilterInterface
 {
     use ResponseTrait;
     public function before(RequestInterface $request, $arguments = null)
