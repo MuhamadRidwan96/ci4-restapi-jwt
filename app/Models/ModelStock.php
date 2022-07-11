@@ -20,18 +20,17 @@ class ModelStock extends Model{
     ];
     protected $validationMessage=[
         'mm' => [
-            'required' => 'silahkan masukan mm'],
+            'required' => 'please insert mm'],
         'bin' => [
-            'required' => 'silahkan masukan bin'],
+            'required' => 'please insert bin'],
         'items'=> [
-            'required' => 'silahkan masukan item'],
+            'required' => 'please insert item'],
         'available_stock' => [
-            'required' => 'silahkan masukan qty'],
+            'required' => 'please insert qty'],
         'uom'   => [
-            'required' => 'silahkan masukan uom'],
+            'required' => 'please insert uom'],
         'gr_date' => [
-            'required' => 'silahkan masukan gr_date'
-        ]
+            'required' => 'please insert gr_date']
         ];
 
     
