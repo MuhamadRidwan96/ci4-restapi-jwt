@@ -36,8 +36,8 @@ class Production extends BaseController{
     }
 
     public function show($id=null){
-        
-        $data = $this->model->where('id_prod', $id)->findAll();
+        $model = new ModelProduction();
+        $data = $model->getWhere(['id_prod' => $id])->getResult();
         if(!$data){
             return $this->failNotFound("data not found");
         } else{
@@ -46,15 +46,15 @@ class Production extends BaseController{
     }
 
     public function update($id=null){
+        $model = new ModelProduction();
 
         $data = $this->request->getRawInput();
-        $data['id_prod'] = $id;
 
-        $isExist = $this->model->where('id_prod',$id)->findAll();
+        $isExist = $model->getWhere(['id_prod' => $id])->getResult();
         if(!$isExist){
             return $this->failNotFound("data not found");
         }
-        if(!$this->model->save($data)){
+        if(!$model->update($id, $data)){
             return $this->fail($this->model->errors());
         }
         $response = [
@@ -68,8 +68,9 @@ class Production extends BaseController{
     }
 
     public function delete($id=null){
+        $model = new ModelProduction();
 
-        $data =$this->model->where('id_prod', $id)->findAll();
+        $data =$model->find($id);
         if($data){
             $this->model->delete($id);
             $response = [
