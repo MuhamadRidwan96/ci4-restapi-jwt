@@ -1,0 +1,40 @@
+CRITICAL - 2022-07-12 11:07:46 --> Algorithm not supported
+#0 /home/rdn/Desktop/ci4-restapi-jwt/vendor/firebase/php-jwt/src/JWT.php(185): Firebase\JWT\JWT::sign()
+#1 /home/rdn/Desktop/ci4-restapi-jwt/app/Helpers/jwt_helper.php(39): Firebase\JWT\JWT::encode()
+#2 /home/rdn/Desktop/ci4-restapi-jwt/app/Controllers/Auth.php(60): createJWT()
+#3 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Auth->index()
+#4 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/rdn/Desktop/ci4-restapi-jwt/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/rdn/Deskt...')
+#8 {main}
+ERROR - 2022-07-12 11:09:52 --> Table 'db_app_vub.stocks' doesn't exist
+CRITICAL - 2022-07-12 11:09:52 --> Table 'db_app_vub.stocks' doesn't exist
+#0 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#4 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#6 /home/rdn/Desktop/ci4-restapi-jwt/app/Controllers/Stock.php(16): CodeIgniter\BaseModel->findAll()
+#7 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Stock->index()
+#8 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#9 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/rdn/Desktop/ci4-restapi-jwt/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/rdn/Deskt...')
+#12 {main}
+ERROR - 2022-07-12 11:12:25 --> Table 'db_app_vub.stocks' doesn't exist
+CRITICAL - 2022-07-12 11:12:25 --> Table 'db_app_vub.stocks' doesn't exist
+#0 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#4 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#6 /home/rdn/Desktop/ci4-restapi-jwt/app/Controllers/Stock.php(16): CodeIgniter\BaseModel->findAll()
+#7 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Stock->index()
+#8 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#9 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/rdn/Desktop/ci4-restapi-jwt/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 /home/rdn/Desktop/ci4-restapi-jwt/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/rdn/Deskt...')
+#12 {main}

@@ -70,9 +70,11 @@ class Filters extends BaseConfig
     public $filters = [
        'authentication' => [
            'before' => [
-               'stcok/*',
-               'stock'
-           ]
+               'production/*',
+               'production'
+               
+           ],
+           
        ]
     ];
 }

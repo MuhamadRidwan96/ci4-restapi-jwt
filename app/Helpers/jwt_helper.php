@@ -8,7 +8,7 @@ use Firebase\JWT\Key;
 function getJWT($authHeader){
 
     if(is_null($authHeader)){
-        throw new Exception("Authentikasi gagal");
+        throw new Exception("Authentication Failed");
     } else {
         return explode(" ",$authHeader)[1];
     }
@@ -16,7 +16,7 @@ function getJWT($authHeader){
 
 function validateJWT($encodeToken){
     $key = getenv('JWT_SECRET_KEY');
-    $decodedToken = JWT::decode($encodeToken,new Key($key,'HS384'));
+    $decodedToken = JWT::decode($encodeToken,new Key($key,'HS256'));
     $mods = new ModelAuth();
     $mods->getEmail($decodedToken->email);
     
@@ -36,6 +36,6 @@ function createJWT($email){
 
     ];
 
-    $jwt = JWT::encode($payload,$key,'HS384');
+    $jwt = JWT::encode($payload,$key,'HS256');
     return $jwt;
 }

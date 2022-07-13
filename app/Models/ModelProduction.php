@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class ModelProduction extends Model{
 
     protected $table = 'tbl_produksi_vub';
-    protected $PrimaryKey = 'id_prod';
+    protected $primaryKey = 'id_prod';
     protected $allowedFields = [
         'id_req_prod',
         'no_po',
