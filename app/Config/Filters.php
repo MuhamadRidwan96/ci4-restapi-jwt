@@ -73,7 +73,9 @@ class Filters extends BaseConfig
                'production/*',
                'production',
                'request/*',
-               'request'
+               'request',
+               'order/*',
+               'order'
                
            ],
            

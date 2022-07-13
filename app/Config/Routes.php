@@ -34,6 +34,7 @@ $routes->setAutoRoute(true);
 //routes->get('/', 'Home::index');
 $routes->resource('production');
 $routes->resource('request');
+$routes->resource('order');
 
 
 /*
