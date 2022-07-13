@@ -71,7 +71,9 @@ class Filters extends BaseConfig
        'authentication' => [
            'before' => [
                'production/*',
-               'production'
+               'production',
+               'request/*',
+               'request'
                
            ],
            
