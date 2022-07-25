@@ -21,20 +21,20 @@ class Auth extends BaseController{
             'username' => [
                 'rules' => 'required',
                 'error' => [
-                    'required' => 'silahkan masukan username anda'
+                    'required' => 'please insert your username '
                 ]
                 ],
             'email' => [
                 'rules' => 'required|valid_email',
                 'error' =>[
-                    'required' => 'silahkan masukan email anda',
-                    'valid_email' => 'email anda tidak valid'
+                    'required' => 'please insert your email ',
+                    'valid_email' => 'email not valid'
                 ]
                 ],
                 'password' => [
                     'rules' => 'required',
                     'error' => [
-                        'required' => 'silahkan masukan password anda'
+                        'required' => 'please insert your password'
                     ]
                 ]
                     ];
@@ -50,12 +50,12 @@ class Auth extends BaseController{
 
                     $data = $mods->getEmail($email);
                     if($data['password'] != md5($password)){
-                        return $this->fail("password tidak sesuai");
+                        return $this->fail("password failed! ");
                     } else {
                          
                         helper('jwt');
                         $response = [
-                        'status' => 'authentikasi berhasil',
+                        'status' => 'authentication success! ',
                         'data' => $data,
                         'access_token' => createJWT($email)
                         ];
